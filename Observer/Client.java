@@ -37,7 +37,7 @@ public class Client {
 		System.out.println("Please type 'add sale' if you wish to discount these items.");
 		input = scan.nextLine();
 		
-		//if you wants to add a discount to all menu items in this package
+		//if you want to add a discount to all menu items in this package
 		if(input.equalsIgnoreCase("add sale")){
 			System.out.println("Please enter the amount you wish to discount the sale as a decimal. "
 					+ "For example, a 5% sale would be entered as ‘.05’.");
