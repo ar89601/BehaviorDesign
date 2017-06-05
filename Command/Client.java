@@ -18,7 +18,7 @@ public class Client {
 		Command addMayo = new AddMayo(mayo);
 		Command removeMayo = new RemoveMayo(mayo);
 		
-		// output to consolve
+		// output to console
 		System.out.println("Please type a menu item.");
 		menuItem = scan.nextLine();
 		
