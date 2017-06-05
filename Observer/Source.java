@@ -7,6 +7,7 @@ package observer;
 import java.util.ArrayList;
 import java.util.List;
 
+// holds methods to update all observers with changes
 public class Source {
 
 	// array list to hold observers
