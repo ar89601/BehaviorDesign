@@ -28,7 +28,11 @@ public class Client {
 		if(input.equalsIgnoreCase("display")){
 			System.out.println("Original price of pizza: $ " + pizza.getPrice() +"\nOriginal price of fries: $ " + fries.getPrice() +
 				"\nOriginal price of cheeseburger: $ " + burger.getPrice() +"\n");
-		}
+		// all other input is incorrect
+		} else {
+			System.out.println("Please retry by typing 'display'.");
+			System.exit(0);
+			}
 		
 		System.out.println("Please type 'add sale' if you wish to discount these items.");
 		input = scan.nextLine();
@@ -47,7 +51,12 @@ public class Client {
 			
 			System.out.println("Sale price: " + discount);
 			source.setState(discount);
-		}
+
+		// all other input is incorrect
+		} else {
+			System.out.println("Please retry by typing 'add sale'.");
+			System.exit(0);
+			}
 		scan.close();
 	}
 }
